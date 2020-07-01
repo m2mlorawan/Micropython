@@ -1,2 +1,22 @@
 Where we kept MicroPython files.
 Read Howto Flash MicroPython Firmware for ESP32.pdf First. (Thai Version)
+File ttn_as.py is for AS1 but commnets freq are showed incorrect.
+Correct hex are as following: 
+#AS#1
+#TTN_FREQS = {0: (0xe6, 0xCC, 0xF4), # 868.1 MHz  (923.2 Mhz)
+#             1: (0xe6, 0xD9, 0xC0), # 868.3 MHz  (923.4 Mhz)
+#             2: (0xe6, 0x8C, 0xF3), # 863.5 MHz  (922.2 Mhz)
+#             3: (0xe6, 0x99, 0xC0), # 867.1 MHz  (922.4 Mhz)
+#             4: (0xe6, 0xA6, 0x8D), # 867.3 MHz  (922.6 Mhz)
+#             5: (0xe6, 0xB3, 0x5A), # 867.5 MHz  (922.8 Mhz)
+#             6: (0xe6, 0xC0, 0x27), # 867.7 MHz  (923.0 Mhz)
+#             7: (0xe6, 0x80, 0x27)} # 867.9 MHz  (922.0 Mhz)
+#AS#2
+TTN_FREQS = {0: (0xe6, 0xCC, 0xF4), # 923.2 Mhz
+             1: (0xe6, 0xD9, 0xC0), # 923.4 Mhz
+             2: (0xe6, 0xe6, 0x66), # 923.6 Mhz
+             3: (0xe6, 0xf3, 0x33), # 923.8 Mhz
+             4: (0xe7, 0x00, 0x00), # 924.0 Mhz
+             5: (0xe7, 0x0C, 0xCC), # 924.2 Mhz
+             6: (0xe7, 0x19, 0x99), # 924.4 Mhz
+             7: (0xe7, 0x26, 0x66)} # 924.6 Mhz
